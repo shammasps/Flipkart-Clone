@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <div class="header bg-white">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar col-md-12 navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="img/Flipkart Logo.png" alt="Flipkart Logo" title="Flipkart"
+              class="nav-img"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex align-items-center search-nav">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-right-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="gray" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </span>
+              <input class="form-control border-left-0 shadow-none bg-light" type="search"
+                placeholder="Search for products, brands and more" aria-label="Search">
+            </div>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="d-flex nav-item active dropdown mr-4">
+              <img src="img/user.png" alt="" srcset="" class="img-nav-user" title="User">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Shammas
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="#">Orders</a>
+                <a class="dropdown-item" href="#">Notification</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+            <li class="nav-item active d-flex mr-4">
+              <img src="img/shopping-cart.png" alt="" srcset="" class="img-nav-user" title="Cart">
+              <a class="nav-link" href="#">Cart </a>
+            </li>
+            <li class="nav-item active d-flex mr-4">
+              <img src="img/shop.png" alt="" srcset="" class="img-nav-user" title="Seller">
+              <a class="nav-link" href="#">Become a Seller</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                <img src="img/more.png" alt="" srcset="" class="img-more-nav">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Help Center</a>
+                <a class="dropdown-item" href="#">Privacy Policy</a>
+              </div>
+            </li>            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="category bg-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 d-flex">
+          <div class="cat-1 ml-4">
+        
+            <a href=""><img src="img/kilos.png" alt="" srcset=""></a>
+            <a href=""><span class="cat-text">Kilos</span></a>  
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/mobile.png" alt="" srcset="" ></a>
+            <a href=""><span class="cat-text">Mobiles</span></a>  
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+          
+            <img src="img/Fashion2.jpeg" alt="" srcset="" class="cat-img-1">
+            <div class="dropdown show">
+              <a class="dropdown-toggle cat-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Fashion
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Mens Fashions</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Shirts</a>
+                    <a class="dropdown-item" href="#">Pants</a>
+                    <a class="dropdown-item" href="#">Shoes</a>
+                  </div>
+                </div>
+          
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Women Fashions</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dresses</a>
+                    <a class="dropdown-item" href="#">Skirts</a>
+                    <a class="dropdown-item" href="#">Heels</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Kids Fashions</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dresses</a>
+                    <a class="dropdown-item" href="#">Pants</a>
+                    <a class="dropdown-item" href="#">Shoes</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Watches and Accessories</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mens and Women Watches</a>
+                    <a class="dropdown-item" href="#">Mens and Women Sunglasses</a>
+                    <a class="dropdown-item" href="#">Kids Accessories</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/electronics.png" alt="" srcset="" class="cat-img-2"></a>  
+            <div class="dropdown show">
+              <a class="dropdown-toggle cat-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Electronics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Audio</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Bluetooth Headphones</a>
+                    <a class="dropdown-item" href="#">Wired Headphones</a>
+                  </div>
+                </div>
+                <a class="dropdown-item" href="#">Electronics GST Store</a>
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Cameras & Accessories</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">DSLR</a>
+                    <a class="dropdown-item" href="#">Sports & Action</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Laptop and Desktop</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Laptop</a>
+                    <a class="dropdown-item" href="#">Gaming PC</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">MobileAccessories</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Cases</a>
+                    <a class="dropdown-item" href="#">MobileCable</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/home.png" alt="" srcset="" class="cat-img-3"></a>
+            <div class="dropdown show">
+              <a class="dropdown-toggle cat-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Home &<br> Furniture
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Home Furnishings</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">BedSheets</a>
+                    <a class="dropdown-item" href="#">Kitchen Sets</a>
+                  </div>
+                </div>
+                <a class="dropdown-item" href="#">Furniture</a>
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Kitchen & Dining</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Kitchen tools</a>
+                    <a class="dropdown-item" href="#">Tableware & Dinnerware</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Bedroom Furniture</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mattresses</a>
+                    <a class="dropdown-item" href="#">Beds</a>
+                    <a class="dropdown-item" href="#">Side Table</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Living Room Furniture</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sofas Sets</a>
+                    <a class="dropdown-item" href="#">Tv unit</a>
+                    <a class="dropdown-item" href="#">Living Room Chairs</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/Appliance.png" alt="" srcset=""></a>
+            <a href=""><span class="cat-text">Appliance</span></a>  
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/toys_and_more.png" alt="" srcset="" class="cat-img-4"></a>
+            <div class="dropdown show">
+              <a class="dropdown-toggle cat-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Beauty,Toys &<br>More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Beauty & Personal Care</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">View All</a>
+                    <a class="dropdown-item" href="#">Hair Care</a>
+                    <a class="dropdown-item" href="#">Face Makeup</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Men's Grooming</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">View All</a>
+                    <a class="dropdown-item" href="#">Face Washes</a>
+                    <a class="dropdown-item" href="#">Beard Oils</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Baby care</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">View All</a>
+                    <a class="dropdown-item" href="#">Baby Wipes</a>
+                    <a class="dropdown-item" href="#">Baby Diapers</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu dropdown dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#">Sports & Fitness</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">View All</a>
+                    <a class="dropdown-item" href="#">Football</a>
+                    <a class="dropdown-item" href="#">Cricket</a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+        
+          </div>
+
+          <div class="cat-1 ml-5">
+        
+            <a href=""><img src="img/FlightBooking.png" alt="" srcset="" ></a>
+            <a href=""><span class="cat-text">Flight <br> Bookings</span></a>  
+        
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel mt-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/carousel-1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carousel-2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carousel-3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carousel-4.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content bg-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-heading p-4">
+          <h4>Best of Electronics</h4>
+        </div>
+        <div class="col-md-12 d-flex">
+
+          <div class="card" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/airpods3.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Best Airpods</p>
+              <span class="card-Price">Grab Now</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Monitor.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Best Gaming Monitors</p>
+              <span class="card-Price">From ₹10000</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Printer.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Best Printer</p>
+              <span class="card-Price">From ₹2336</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/SmartWatches.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Best SmartWatches</p>
+              <span class="card-Price">From ₹1099</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Projecters.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Best Projectors</p>
+              <span class="card-Price">From ₹9999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="second-content bg-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-heading p-4">
+          <h4>Beauty, Food, Toys & more</h4>
+        </div>
+        <div class="col-md-12 d-flex">
+
+          <div class="card" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Cofe.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Tea powder</p>
+              <span class="card-Price">Grab Now</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Fitness.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Treadmill</p>
+              <span class="card-Price">Up to 70% Off</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Cycle.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Electric Cycle</p>
+              <span class="card-Price">Up to 40% Off</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/ActionToys.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Action Toys</p>
+              <span class="card-Price">Up to 50% Off</span>
+            </div>
+          </div>
+
+          <div class="card ml-3" style="width: 14rem; border: none;">
+            <img class="card-image" src="img/Toys.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text mb-0">Remote Control Car</p>
+              <span class="card-Price">Up to 50% Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
